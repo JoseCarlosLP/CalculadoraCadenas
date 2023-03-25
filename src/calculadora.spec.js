@@ -7,5 +7,8 @@ describe("Sumador de cadenas",()=>{
     it("Sumar una cadena de un caracter ",()=>{
         expect(sumadorCadenas("1")).toEqual(1);
     })
+    it("Sumar una cadena de dos caracteres separados por coma",()=>{
+        expect(sumadorCadenas("1,2")).toEqual(3);
+    })
 })
 
