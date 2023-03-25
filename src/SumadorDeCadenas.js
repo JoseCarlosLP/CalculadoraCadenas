@@ -1,3 +1,4 @@
 export function sumadorCadenas(cadenaASumar){
-    return cadenaASumar.length;
+    if(cadenaASumar.length==0) return cadenaASumar.length;
+    return parseInt(cadenaASumar);
 }
