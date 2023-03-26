@@ -31,5 +31,8 @@ describe("Sumador de cadenas",()=>{
     it("Numeros mayores a 1000 son ignorados",()=>{
         expect(sumadorCadenas("1-2-1001")).toEqual(3);
     })
+    it("Sumar una cadena de mas de 2 numeros separados por un delimitador de cualquier longitud",()=>{
+        expect(sumadorCadenas("//[****] 1****2****4")).toEqual(7);
+    })
 })
 

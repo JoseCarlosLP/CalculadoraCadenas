@@ -2,7 +2,8 @@ export function sumadorCadenas(cadenaASumar){
     if(cadenaASumar.length==0) return cadenaASumar.length;
     if(cadenaASumar.length==1) return parseInt(cadenaASumar);
     if(cadenaASumar[0]=="/") { 
-        var delimitador=cadenaASumar[3];
+        var indexfinDelimitador=cadenaASumar.indexOf("]");
+        var delimitador=cadenaASumar.substring(3,indexfinDelimitador);
         cadenaASumar=cadenaASumar.replaceAll(delimitador,",");
         var indicePrimerNumero=cadenaASumar.indexOf(" ")+1;
         cadenaASumar=cadenaASumar.substring(indicePrimerNumero,cadenaASumar.length);
