@@ -7,14 +7,12 @@ export function sumadorCadenas(cadenaASumar){
         var indexfinDelimitador=cadenaASumar.indexOf("]");
         var indexUltimoDelimitador=cadenaASumar.lastIndexOf("]");
         var delimitador=cadenaASumar.substring(indexInicioDelimitador+1,indexfinDelimitador);
-        console.log("DELIMITADOR: "+delimitador);
         if(indexfinDelimitador==indexUltimoDelimitador) {
             var indicePrimerNumero=cadenaASumar.indexOf(" ")+1;
             cadenaASumar=cadenaASumar.substring(indicePrimerNumero,cadenaASumar.length);}
         else {
             cadenaASumar=cadenaASumar.substring(indexfinDelimitador+1,cadenaASumar.length);}
-        cadenaASumar=cadenaASumar.replaceAll(delimitador,",");
-        console.log("HOLAAA   " + cadenaASumar);    
+        cadenaASumar=cadenaASumar.replaceAll(delimitador,",");  
         }while(indexfinDelimitador!=indexUltimoDelimitador)
     }    
     cadenaASumar=cadenaASumar.replaceAll("-",",");

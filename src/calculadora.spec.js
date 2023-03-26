@@ -38,7 +38,7 @@ describe("Sumador de cadenas",()=>{
         expect(sumadorCadenas("//[*][/] 1*2/4")).toEqual(7);
     })
     it("Sumar una cadena de 2 mas de 2 numeros separados por multiples delimitadores",()=>{
-        expect(sumadorCadenas("//[*][%%] 1*2%%4,5")).toEqual(12);
+        expect(sumadorCadenas("//[*][%%][.] 1.2%%4,5")).toEqual(12);
     })
 })
 
