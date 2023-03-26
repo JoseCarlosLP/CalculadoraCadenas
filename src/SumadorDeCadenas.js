@@ -4,7 +4,8 @@ export function sumadorCadenas(cadenaASumar){
     if(cadenaASumar[0]=="/") { 
         var delimitador=cadenaASumar[3];
         cadenaASumar=cadenaASumar.replaceAll(delimitador,",");
-        cadenaASumar=cadenaASumar.substring(6,cadenaASumar.length);
+        var indicePrimerNumero=cadenaASumar.indexOf(" ")+1;
+        cadenaASumar=cadenaASumar.substring(indicePrimerNumero,cadenaASumar.length);
     }    
     cadenaASumar=cadenaASumar.replaceAll("-",",");
     let ArrayNumerosDeLaCadena=cadenaASumar.split(",");
