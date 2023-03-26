@@ -11,6 +11,7 @@ export function sumadorCadenas(cadenaASumar){
     let ArrayNumerosDeLaCadena=cadenaASumar.split(",");
     let suma=0;
     for(let i=0;i<ArrayNumerosDeLaCadena.length;i++){
-        suma=suma+parseInt(ArrayNumerosDeLaCadena[i]);}
+        if(parseInt(ArrayNumerosDeLaCadena[i])<=1000)
+            suma=suma+parseInt(ArrayNumerosDeLaCadena[i]);}
     return suma;
 }
